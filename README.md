@@ -206,3 +206,11 @@ https://github.com/HowardNTUST/Deploying-flask-linebot-Heroku-with-PostgreSQL-
 http://tw.gitbook.net/postgresql/2013080998.html
 
 https://ithelp.ithome.com.tw/articles/10198221
+
+https://stackoverflow.com/questions/16573802/flask-sqlalchemy-how-to-delete-all-rows-in-a-single-table
+
+http://flask-sqlalchemy.pocoo.org/2.3/queries/
+
+http://www.pythondoc.com/flask-sqlalchemy/quickstart.html
+
+https://blog.techbridge.cc/2017/08/12/python-web-flask101-tutorial-sqlalchemy-orm-database-models/
