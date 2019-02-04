@@ -39,6 +39,13 @@ python dbModel.py db upgrade
 
 dbModel.py code
 -------
+
+Find SQLALCHEMY_DATABASE_URI on heroku
+-------
+1.
+![](https://i.imgur.com/K6CyCMu.png")
+2.
+![](https://i.imgur.com/vhdr47P.png")
 ```
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
