@@ -25,15 +25,15 @@ deploy cmd Command
 (I name the file dbModel.py, and you can transform it into your file name)
 After you have accomplished the step 1, if you would like to insert or delete the column, you just need repaet the step 2 and step 3. 
 
-Step 1.initialization 
+Step 1. initialization 
 ```
 python dbModel.py db init
 ```
-Step 2.Migrate
+Step 2. Migrate
 ```
 python dbModel.py db migrate
 ```
-Step 3.Upgrade
+Step 3. Upgrade
 ```
 python dbModel.py db upgrade
 ```
@@ -159,21 +159,13 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0', port=port)
 ```
 
+LINEBOT screenshop
+====
+![](https://i.imgur.com/wgPAnmv.jpg")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Reference
+====
+https://github.com/twtrubiks/Deploying-Flask-To-Heroku
+https://github.com/HowardNTUST/Deploying-flask-linebot-Heroku-with-PostgreSQL-
+http://tw.gitbook.net/postgresql/2013080998.html
+https://ithelp.ithome.com.tw/articles/10198221
