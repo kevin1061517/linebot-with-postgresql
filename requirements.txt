@@ -1,12 +1,4 @@
-beautifulsoup4
 line-bot-sdk
-python-firebase
-config
-imgurpython
-SpeechRecognition
-pydub
-gunicorn==19.7.1
-selenium==3.8.0
 psycopg2
 Flask
 Flask-Migrate
