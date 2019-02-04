@@ -158,7 +158,43 @@ if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
 ```
+Insert records
+====
+```
+    add_data = usermessage(
+            id = bodyjson['events'][0]['message']['id'],
+            user_id = bodyjson['events'][0]['source']['userId'],
+            message = bodyjson['events'][0]['message']['text'],
+            birth_date = datetime.fromtimestamp(int(bodyjson['events'][0]['timestamp'])/1000)
+        )
+    db.session.add(add_data)
+    db.session.commit()
+```
+delete records
+====
+delete all record
+```
+     t = db.session.query(usermessage).delete()
+     db.session.commit()
+     print('end------------',str(t))
+     line_bot_api.reply_message(event.reply_token,TextSendMessage(text= 'successfully'))  
+```
 
+query records
+====
+```
+    data_UserData = usermessage.query.all()
+    history_dic = {}
+    history_list = []
+    for _data in data_UserData:
+         history_dic['id'] = _data.id
+         history_dic['User_Id'] = _data.user_id
+         history_dic['Mesaage'] = _data.message
+         history_dic['Date'] = _data.birth_date
+         history_list.append(history_dic)
+         history_dic = {}
+    line_bot_api.reply_message(event.reply_token,TextSendMessage(text= str(history_list)))
+```
 LINEBOT screenshop
 ====
 ![](https://i.imgur.com/wgPAnmv.jpg")
