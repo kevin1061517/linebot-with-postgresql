@@ -1,5 +1,3 @@
-Deploying-LineBot-with-PostgreSQL-to-heroku
-==== 
 
 Descript
 -------
@@ -159,7 +157,7 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0', port=port)
 ```
 Insert records
-====
+-------
 ```
     add_data = usermessage(
             id = bodyjson['events'][0]['message']['id'],
@@ -171,7 +169,7 @@ Insert records
     db.session.commit()
 ```
 delete records
-====
+-------
 delete all record
 ```
      t = db.session.query(usermessage).delete()
@@ -181,7 +179,7 @@ delete all record
 ```
 
 query records
-====
+-------
 ```
     data_UserData = usermessage.query.all()
     history_dic = {}
@@ -196,11 +194,11 @@ query records
     line_bot_api.reply_message(event.reply_token,TextSendMessage(text= str(history_list)))
 ```
 LINEBOT screenshop
-====
+-------
 ![](https://i.imgur.com/wgPAnmv.jpg")
 
 Reference
-====
+-------
 https://github.com/twtrubiks/Deploying-Flask-To-Heroku
 
 https://github.com/HowardNTUST/Deploying-flask-linebot-Heroku-with-PostgreSQL-
