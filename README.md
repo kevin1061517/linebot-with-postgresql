@@ -24,6 +24,7 @@ deploy cmd Command
 -------
 (I name the file dbModel.py, and you can transform it into your file name)
 After you have accomplished the step 1, if you would like to insert or delete the column, you just need repaet the step 2 and step 3. 
+
 Step 1.initialization 
 ```
 python dbModel.py db init
